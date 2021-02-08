@@ -5,11 +5,7 @@
 name: Auto-release
 
 on:
-  push: [main]
-  pull_request: [main]
-
   # Decide what the new version number will be
-  # @ericmjl I included this as not sure if this step can be automated...
   workflow_dispatch:
     inputs:
       versionName:
