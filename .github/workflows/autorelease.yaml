@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
     inputs:
       versionName:
-        description: 'Name of version (ie x.YY.MM)'
+        description: "One of 'major', 'minor', or 'patch'"
         required: true
 
 jobs:
