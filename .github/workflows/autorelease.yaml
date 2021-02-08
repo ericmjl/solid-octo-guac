@@ -53,7 +53,7 @@ jobs:
         run: git status
 
       - name: Run bumpversion
-        run: bumpversion ${{ github.event.inputs.versionName }} -- verbose
+        run: bumpversion ${{ github.event.inputs.versionName }} --verbose
 
       - name: Ensure tag creation
         run: git tag | grep ${{ github.event.inputs.versionName }}
