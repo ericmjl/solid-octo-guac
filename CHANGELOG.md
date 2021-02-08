@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+## [0.4.2] - 2021-02-08
+
 ## [0.4.1] - 2021-02-08
 
 ## [0.4.0] - 2021-02-08
@@ -22,7 +24,9 @@
 
 -   Some stuff
 
-[Unreleased]: https://github.com/ericmjl/solid-octo-guac/compare/0.4.1...HEAD
+[Unreleased]: https://github.com/ericmjl/solid-octo-guac/compare/0.4.2...HEAD
+
+[0.4.2]: https://github.com/ericmjl/solid-octo-guac/compare/0.4.1...0.4.2
 
 [0.4.1]: https://github.com/ericmjl/solid-octo-guac/compare/0.4.0...0.4.1
 
