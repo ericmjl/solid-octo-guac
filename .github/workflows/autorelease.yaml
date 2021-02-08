@@ -26,12 +26,6 @@ jobs:
           git checkout main
           git pull
 
-      # See https://github.com/thomaseizinger/keep-a-changelog-new-release
-      - name: Update Changelog
-        uses: thomaseizinger/keep-a-changelog-new-release@v1
-        with:
-          version: ${{ github.event.inputs.versionName }}
-
       - name: Setup Python
         uses: actions/setup-python@v2
 
@@ -41,6 +35,16 @@ jobs:
       - name: Dry run bumpversion
         run: |
           bumpversion --dry-run ${{ github.event.inputs.versionName }} --allow-dirty --verbose
+
+      - name: Get new version number
+        run: |
+          echo "version_number=`bumpversion --dry-run --list ${{ github.event.inputs.versionName }} --dry-run | grep current_version | sed -r s,"^.*=",,`" >> $GITHUB_ENV
+
+      # See https://github.com/thomaseizinger/keep-a-changelog-new-release
+      - name: Update Changelog
+        uses: thomaseizinger/keep-a-changelog-new-release@v1
+        with:
+          version: ${{ env.version_number }}
 
       - name: Commit CHANGELOG updates
         run: |
