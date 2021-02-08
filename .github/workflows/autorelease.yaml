@@ -40,7 +40,7 @@ jobs:
       - name: Get new version number
         run: |
           echo "version_number=`bumpversion --dry-run --list ${{ github.event.inputs.versionName }} | grep new_version | sed -r s,"^.*=",,`" >> $GITHUB_ENV
-          echo "versionName: ${{ github.event.inputs.versionName }} version_number: {{ env.version_number }}"
+          echo "versionName: ${{ github.event.inputs.versionName }} version_number: ${{ env.version_number }}"
 
       # See https://github.com/thomaseizinger/keep-a-changelog-new-release
       - name: Update Changelog
