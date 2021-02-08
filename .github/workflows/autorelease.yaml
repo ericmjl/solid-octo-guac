@@ -47,16 +47,13 @@ jobs:
           git config --global user.email "git@github.com"
           git config --global user.name "GitHub Bot"
           git add .
-          git commit -m "Update CHANGELOG for auto-release ${{ github.event.inputs.versionName }}"
+          git commit -m "Update CHANGELOG for auto-release"
 
       - name: Ensure repo status is clean
         run: git status
 
       - name: Run bumpversion
         run: bumpversion ${{ github.event.inputs.versionName }} --verbose
-
-      - name: Ensure tag creation
-        run: git tag | grep ${{ github.event.inputs.versionName }}
 
       - name: Push changes with tags
         run: git push && git push --tags
