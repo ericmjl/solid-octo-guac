@@ -1,8 +1,11 @@
 ## [Unreleased]
 
+## [v0.4.7] - 2021-02-24
+
 ### Changed
-- Removed quotations around 'major', 'minor', and 'patch' for workflow input
-- Changed `versionName` to `version_name` for pythonic and consistency with `version_number`
+
+-   Removed quotations around 'major', 'minor', and 'patch' for workflow input
+-   Changed `versionName` to `version_name` for pythonic and consistency with `version_number`
 
 ## [v0.4.6] - 2021-02-24
 
@@ -40,7 +43,9 @@
 
 -   Some stuff
 
-[Unreleased]: https://github.com/ericmjl/solid-octo-guac/compare/v0.4.6...HEAD
+[Unreleased]: https://github.com/ericmjl/solid-octo-guac/compare/v0.4.7...HEAD
+
+[v0.4.7]: https://github.com/ericmjl/solid-octo-guac/compare/v0.4.6...v0.4.7
 
 [v0.4.6]: https://github.com/ericmjl/solid-octo-guac/compare/v0.4.5...v0.4.6
 
