@@ -8,8 +8,8 @@ on:
   # Decide what the new version number will be
   workflow_dispatch:
     inputs:
-      versionName:
-        description: "One of 'major', 'minor', or 'patch'"
+      version_name:
+        description: "One of major, minor, or patch"
         required: true
 
 jobs:
@@ -34,15 +34,16 @@ jobs:
 
       - name: Dry run bumpversion
         run: |
-          bumpversion --dry-run ${{ github.event.inputs.versionName }} --allow-dirty --verbose
+          bumpversion --dry-run ${{ github.event.inputs.version_name }} --allow-dirty --verbose
 
       # This is lifted directly from the bump2version docs.
       # Version number will be saved in `env` section of each consecutive stage
       - name: Get new version number
         run: |
-          echo "version_number=`bumpversion --dry-run --list ${{ github.event.inputs.versionName }} | grep new_version | sed -r s,"^.*=",,`" >> $GITHUB_ENV
-          echo "versionName: ${{ github.event.inputs.versionName }}"
+          echo "version_number=`bumpversion --dry-run --list ${{ github.event.inputs.version_name }} | grep new_version | sed -r s,"^.*=",,`" >> $GITHUB_ENV
+          echo "version_name: ${{ github.event.inputs.version_name }}"
           echo "version_number: v${{ env.version_number}}"
+          echo $version_number
 
       # See https://github.com/thomaseizinger/keep-a-changelog-new-release
       - name: Update Changelog
@@ -61,7 +62,7 @@ jobs:
         run: git status
 
       - name: Run bumpversion
-        run: bumpversion ${{ github.event.inputs.versionName }} --verbose
+        run: bumpversion ${{ github.event.inputs.version_name }} --verbose
 
       - name: Push changes with tags
         run: git push && git push --tags
