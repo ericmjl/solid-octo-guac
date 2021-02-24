@@ -1,7 +1,11 @@
 ## [Unreleased]
+
+## [v0.4.8] - 2021-02-24
+
 ### Changes
-- Break up "Get new version number" into 2 jobs:
-  (1) "Store new version number" and "Display version_name and version_number"
+
+-   Break up "Get new version number" into 2 jobs:
+    (1) "Store new version number" and "Display version_name and version_number"
 
 ## [v0.4.7] - 2021-02-24
 
@@ -46,7 +50,9 @@
 
 -   Some stuff
 
-[Unreleased]: https://github.com/ericmjl/solid-octo-guac/compare/v0.4.7...HEAD
+[Unreleased]: https://github.com/ericmjl/solid-octo-guac/compare/v0.4.8...HEAD
+
+[v0.4.8]: https://github.com/ericmjl/solid-octo-guac/compare/v0.4.7...v0.4.8
 
 [v0.4.7]: https://github.com/ericmjl/solid-octo-guac/compare/v0.4.6...v0.4.7
 
