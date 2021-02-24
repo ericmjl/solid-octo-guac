@@ -1,4 +1,7 @@
 ## [Unreleased]
+### Changes
+- Break up "Get new version number" into 2 jobs:
+  (1) "Store new version number" and "Display version_name and version_number"
 
 ## [v0.4.7] - 2021-02-24
 

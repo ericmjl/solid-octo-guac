@@ -38,12 +38,13 @@ jobs:
 
       # This is lifted directly from the bump2version docs.
       # Version number will be saved in `env` section of each consecutive stage
-      - name: Get new version number
+      - name: Store new version number
+        run: echo "version_number=`bumpversion --dry-run --list ${{ github.event.inputs.version_name }} | grep new_version | sed -r s,"^.*=",,`" >> $GITHUB_ENV
+
+      - name: Display version_name and version_number
         run: |
-          echo "version_number=`bumpversion --dry-run --list ${{ github.event.inputs.version_name }} | grep new_version | sed -r s,"^.*=",,`" >> $GITHUB_ENV
           echo "version_name: ${{ github.event.inputs.version_name }}"
           echo "version_number: v${{ env.version_number}}"
-          echo $version_number
 
       # See https://github.com/thomaseizinger/keep-a-changelog-new-release
       - name: Update Changelog
