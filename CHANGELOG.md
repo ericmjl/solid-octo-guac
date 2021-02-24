@@ -1,6 +1,10 @@
 ## [Unreleased]
+
+## [v0.4.6] - 2021-02-24
+
 ### Changed
-- Try `v` prefix with auto-release.yaml
+
+-   Try `v` prefix with auto-release.yaml
 
 ## [0.4.5] - 2021-02-08
 
@@ -32,7 +36,9 @@
 
 -   Some stuff
 
-[Unreleased]: https://github.com/ericmjl/solid-octo-guac/compare/v0.4.5...HEAD
+[Unreleased]: https://github.com/ericmjl/solid-octo-guac/compare/v0.4.6...HEAD
+
+[v0.4.6]: https://github.com/ericmjl/solid-octo-guac/compare/0.4.5...v0.4.6
 
 [0.4.5]: https://github.com/ericmjl/solid-octo-guac/compare/v0.4.4...v0.4.5
 
