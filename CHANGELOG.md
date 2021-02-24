@@ -1,4 +1,6 @@
 ## [Unreleased]
+### Changed
+- Try `v` prefix with auto-release.yaml
 
 ## [0.4.5] - 2021-02-08
 
@@ -30,20 +32,20 @@
 
 -   Some stuff
 
-[Unreleased]: https://github.com/ericmjl/solid-octo-guac/compare/0.4.5...HEAD
+[Unreleased]: https://github.com/ericmjl/solid-octo-guac/compare/v0.4.5...HEAD
 
-[0.4.5]: https://github.com/ericmjl/solid-octo-guac/compare/0.4.4...0.4.5
+[0.4.5]: https://github.com/ericmjl/solid-octo-guac/compare/v0.4.4...v0.4.5
 
-[0.4.4]: https://github.com/ericmjl/solid-octo-guac/compare/0.4.3...0.4.4
+[0.4.4]: https://github.com/ericmjl/solid-octo-guac/compare/v0.4.3...v0.4.4
 
-[0.4.3]: https://github.com/ericmjl/solid-octo-guac/compare/0.4.2...0.4.3
+[0.4.3]: https://github.com/ericmjl/solid-octo-guac/compare/v0.4.2...v0.4.3
 
-[0.4.2]: https://github.com/ericmjl/solid-octo-guac/compare/0.4.1...0.4.2
+[0.4.2]: https://github.com/ericmjl/solid-octo-guac/compare/v0.4.1...v0.4.2
 
-[0.4.1]: https://github.com/ericmjl/solid-octo-guac/compare/0.4.0...0.4.1
+[0.4.1]: https://github.com/ericmjl/solid-octo-guac/compare/v0.4.0...v0.4.1
 
-[0.4.0]: https://github.com/ericmjl/solid-octo-guac/compare/0.3.0...0.4.0
+[0.4.0]: https://github.com/ericmjl/solid-octo-guac/compare/v0.3.0...v0.4.0
 
-[0.2.0]: https://github.com/ericmjl/solid-octo-guac/compare/minor...0.2.0
+[0.2.0]: https://github.com/ericmjl/solid-octo-guac/compare/minor...v0.2.0
 
-[minor]: https://github.com/ericmjl/solid-octo-guac/compare/0.1.0...minor
+[minor]: https://github.com/ericmjl/solid-octo-guac/compare/v0.1.0...minor
