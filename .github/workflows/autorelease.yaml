@@ -68,5 +68,12 @@ jobs:
       - name: Push changes with tags
         run: git push && git push --tags
 
+      - name: Create release in GitHub repo
+        uses: ncipollo/release-action@v1
+        with:
+            body: "Contribution details can be found in CHANGELOG.rst"
+            token: {{ secrets.GITHUB_TOKEN }}
+            tag: v${{ env.version_number}}"
+
       - name: Ensure complete
         run: echo "Auto-release complete!"

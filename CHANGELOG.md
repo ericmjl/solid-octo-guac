@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+- Trying to set up actual release in GitHub to attach to auto release manual start
+
 ## [v1.0.0] - 2021-02-24
 
 ## [v0.5.0] - 2021-02-24
