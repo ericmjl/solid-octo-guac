@@ -1,5 +1,8 @@
 ## [Unreleased]
-- Updating GitHub release pointer step to include echo message
+
+## [v2.0.0] - 2021-07-17
+
+-   Updating GitHub release pointer step to include echo message
 
 ## [v1.0.1] - 2021-07-17
 
@@ -59,7 +62,9 @@
 
 -   Some stuff
 
-[Unreleased]: https://github.com/ericmjl/solid-octo-guac/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/ericmjl/solid-octo-guac/compare/v2.0.0...HEAD
+
+[v2.0.0]: https://github.com/ericmjl/solid-octo-guac/compare/v1.0.1...v2.0.0
 
 [v1.0.1]: https://github.com/ericmjl/solid-octo-guac/compare/v1.0.0...v1.0.1
 
