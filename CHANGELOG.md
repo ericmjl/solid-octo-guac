@@ -1,6 +1,8 @@
 ## [Unreleased]
 
-- Trying to set up actual release in GitHub to attach to auto release manual start
+## [v1.0.1] - 2021-07-17
+
+-   Trying to set up actual release in GitHub to attach to auto release manual start
 
 ## [v1.0.0] - 2021-02-24
 
@@ -56,7 +58,9 @@
 
 -   Some stuff
 
-[Unreleased]: https://github.com/ericmjl/solid-octo-guac/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/ericmjl/solid-octo-guac/compare/v1.0.1...HEAD
+
+[v1.0.1]: https://github.com/ericmjl/solid-octo-guac/compare/v1.0.0...v1.0.1
 
 [v1.0.0]: https://github.com/ericmjl/solid-octo-guac/compare/v0.5.0...v1.0.0
 
