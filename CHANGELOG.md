@@ -1,4 +1,5 @@
 ## [Unreleased]
+- Updating GitHub release pointer step to include echo message
 
 ## [v1.0.1] - 2021-07-17
 
