@@ -74,8 +74,6 @@ jobs:
             body: "Contribution details can be found in CHANGELOG.rst"
             token: ${{ secrets.GITHUB_TOKEN }}
             tag: v${{ env.version_number}}
-        run: |
-          echo "Creating a GitHub Release pointer (latest release in repo) for v${{ env.version_number }}"
 
       - name: Ensure complete
         run: echo "Auto-release complete!"
